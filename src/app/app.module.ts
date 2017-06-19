@@ -33,10 +33,7 @@ import { AppState, InternalStateType } from './app.service'
 import { HomeComponent } from './home'
 import { UserComponent, UserEditComponent, UsersComponent } from './users'
 import { NoContentComponent } from './no-content'
-/*
- *Added AboutComponent for about site page
- */
-import { AboutComponent } from './about/about.component'
+
 import { XLargeDirective } from './home/x-large'
 
 import '../styles/styles.scss'
@@ -66,7 +63,7 @@ type StoreType = {
     AppComponent,
     HomeComponent,
     NoContentComponent,
-    AboutComponent,
+    
     UserComponent,
     UserEditComponent,
     UsersComponent,
