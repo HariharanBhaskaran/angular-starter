@@ -16,4 +16,9 @@ import { IUser } from './user.interface'
 export class UserComponent {
   @Input() user: IUser
   @Output() onEdit = new EventEmitter()
+  /*
+  Added onDelete emitter for deleting record from list
+  */
+   @Output() onDelete = new EventEmitter()
+  
 }

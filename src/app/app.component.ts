@@ -25,7 +25,8 @@ import { AppState } from './app.service'
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         Index
       </a>
-      <a [routerLink]=" ['./homes'] "
+        <!--Giving the route for re-directing properly to home folder in app.route.ts file-->
+      <a [routerLink]=" ['./home'] "
         md-button
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         Home

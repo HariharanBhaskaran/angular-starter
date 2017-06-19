@@ -1,8 +1,15 @@
+<!-- Added lastname of the user-->
 <div class="info-panel">
-  {{user.surnameName}}, {{user.firstName}}
-</div>
+   {{user.firstName}} {{ user.lastName}} 
+   </div>
 <div class="action-buttons">
-  <button md-mini-fab (click)="onEdit.emit()">
+  <button md-mini-fab (click)="onEdit.emit($event)" >
     Edit
   </button>
+  <!-- Added delete button to delete the user -->
+  <button md-mini-fab (click)="onDelete.emit($event)" >
+    Delete
+  </button>
+  
+  
 </div>
